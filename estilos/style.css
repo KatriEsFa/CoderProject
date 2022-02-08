@@ -683,7 +683,11 @@ footer {
     #mapaUbicacion, #contactosAlternativos {
         margin-top: 104px;
     }
-
+    /* DESTINOS */
+    #carouselTextEuropa {
+        color: black;
+        font-weight: bold;
+    }
 
     /*Contactanos*/
     /*GRID AREAS*/
