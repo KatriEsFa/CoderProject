@@ -128,8 +128,6 @@ header {
     letter-spacing: 10px;
 }
 /*Destinos*/
-
-
 .carouselImages {
     height: 100vh;
 }  
@@ -137,11 +135,13 @@ header {
 #destinosDiv1, #destinosDiv2, #destinosDiv3, #destinosDiv4, #destinosDiv5, #destinosDiv6, #destinosDiv7, #destinosDiv8 {
     min-height: 100vh;
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 #destinosDiv1 {
     margin-top: 54px;
-    background-image: url(../imagenes/destinos1.jpg);
+    /* background-image: url(../imagenes/destinos1.jpg);s */
 }
 #destinosDiv2 {
     background-image: url(../imagenes/imagen3.JPG);
@@ -435,7 +435,24 @@ footer {
         font-size: small;
         max-width: 100%;
     }
-    /*Promociones*/
+    /* DestinosMobile */
+    #carouselContenedorDiv {
+        display: none;
+    }
+    #destinosDiv1, #destinosDiv2, #destinosDiv3, #destinosDiv4, #destinosDiv5, #destinosDiv6, #destinosDiv7, #destinosDiv8 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+    #destinosDiv1 {
+        margin-top: 54px;
+        background-image: url(../imagenes/destinos1.jpg);
+    }
+
+    
+    /*PromocionesMobile*/
     #sectionPromociones {
         display: flex;
         justify-items: center;
@@ -524,6 +541,10 @@ footer {
     header {
         flex-direction: row-reverse;
     }
+    /* DESTINOS */
+    #carouselContenedorDiv {
+        display: none;
+    }
     /*PROMOCIONES Y RESERVA*/
    #sectionPromociones {
         display: flex;
@@ -577,6 +598,9 @@ footer {
         display: none;
     }
     #respMenu {
+        display: none;
+    }
+    #sectionDestinos {
         display: none;
     }
     #divFormReserva, #divContact {
