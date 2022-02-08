@@ -519,6 +519,56 @@ footer {
     #respMenu {
         display: none;
     }
+    #menuBtn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 100%;
+        transition: all .5s ease-in-out;
+        margin-left: 15px;
+    }
+    /*Animation Burguer*/
+    #menuBtnAnimation {
+        width: 50px;
+        height: 6px;
+        background: #c0b096;
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+    }
+    #menuBtnAnimation::before,
+    #menuBtnAnimation::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: #c0b096;
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+    }
+
+    #menuBtnAnimation::before {
+        transform: translateY(-16px) translateX(-50%);
+        
+    }
+
+    #menuBtnAnimation::after {
+        transform: translateY(16px) translateX(-50%);
+    }
+    #respMenu:checked ~ #labelRespMenu > #menuBtn #menuBtnAnimation  {
+       transform: translateX(-70px);
+       background: transparent;
+       box-shadow: none; 
+    }
+
+    #respMenu:checked ~ #labelRespMenu > #menuBtn #menuBtnAnimation::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }  
+
+    #respMenu:checked ~ #labelRespMenu > #menuBtn #menuBtnAnimation::after {
+        transform: rotate(-45deg) translate(35px, 35px)
+    }
     #labelRespMenu {
         box-sizing: border-box;
         display: flex;
@@ -541,10 +591,21 @@ footer {
     header {
         flex-direction: row-reverse;
     }
-    /* DESTINOS */
-    #carouselContenedorDiv {
-        display: none;
-    }
+    /* DESTINOS MOBILE TABLET */
+   #carouselContenedorDiv {
+    display: none;
+}
+   #destinosDiv1, #destinosDiv2, #destinosDiv3, #destinosDiv4, #destinosDiv5, #destinosDiv6, #destinosDiv7, #destinosDiv8 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+   #destinosDiv1 {
+    margin-top: 54px;
+    background-image: url(../imagenes/destinos1.jpg);
+}
     /*PROMOCIONES Y RESERVA*/
    #sectionPromociones {
         display: flex;
