@@ -291,6 +291,8 @@ header {
       header #pagIcon {
         justify-items: center; } }
   @media (min-width: 1024px) {
+    header label {
+      display: none; }
     header #hambMenuIcon {
       display: none; }
     header #respMenu {
@@ -331,6 +333,27 @@ footer {
 
 #destinosDiv1 {
   margin-top: 54px; }
+
+#destinosDiv2 {
+  background-image: url(../imagenes/imagen3.JPG); }
+
+#destinosDiv3 {
+  background-image: url(../imagenes/destinos3.jpg); }
+
+#destinosDiv4 {
+  background-image: url(../imagenes/ImagenBGPromo.jpg); }
+
+#destinosDiv5 {
+  background-image: url(../imagenes/destinos5.jpg); }
+
+#destinosDiv6 {
+  background-image: url(../imagenes/destinos6.jpg); }
+
+#destinosDiv7 {
+  background-image: url(../imagenes/destinos7.jpg); }
+
+#destinosDiv8 {
+  background-image: url(../imagenes/destinos8.jpg); }
 
 #parrafoPromociones, .interDivsDestinos {
   width: 100%;
