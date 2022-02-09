@@ -1,78 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Oswald:wght@200&display=swap');/*EN SCSS*/
 
 * {
     margin: 0;
     padding: 0;    
-}
+}/*EN SCSS*/
 
 
 header {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 54px;
+    top: 0;/*en scss*/
+    left: 0;/*en scss*/
+    width: 100%;/*en scss*/
+    height: 54px;/*en scss*/
     background: #f3e2c7;
     border-top: 15px solid #c0b096;
-    margin: 0;
+    margin: 0;/*en scss*/
     font-family: "Oswald";
-    margin-bottom: 0%;
-    border-bottom: 0px;
     display:flex;
     position: fixed;
     flex-wrap: nowrap;
     box-sizing: content-box;
     z-index: 500;
-}
+}/*EN SCSS*/
 #labelRespMenu {
     display: none;
-}
+}/*EN SCSS*/
 .navBar {
-    width: 100%;
-    margin: 0px;
-    height: 100%;
-}
+    width: 100%;/*en scss*/
+    margin: 0px;/*en scss*/
+    height: 100%;/*en scss*/
+}/*EN SCSS*/
 #pagIcon {
-    height: 100%;
-}
+    height: 100%;/*en scss*/
+}/*EN SCSS*/
 .navBarButton {
-    background: #f3e2c7;
-    border: none;
-    color: black;
-    padding: 15px 32px;
+    background: #f3e2c7;/*en scss*/
+    border: none;/*en scss*/
+    color: black;/*en scss*/
+    padding: 15px 32px;/*en scss*/
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    margin-left: 0px;
+    margin-left: 0px;/*en scss*/
     margin-right: 0px;
     float: left;
     font-family: "Oswald";
     cursor: pointer;
     display: flex;
     flex-wrap: nowrap;
-}
+}/*EN SCSS*/
 
 .navBarButton:hover {
-    color:black;
-    z-index: 50;
-    background: #f3e2c7;
-    box-shadow: 0 8px 16px 0 #c0b096, 0 6px 20px 0 #c0b096;
+    color:black;/*en scss*/
+    z-index: 50;/*en scss*/
+    background: #f3e2c7;/*en scss*/
+    box-shadow: 0 8px 16px 0 #c0b096, 0 6px 20px 0 #c0b096;/*en scss*/
     transition-duration: 0.4s;
     animation: 1s ms 1;
-}
+}/*EN SCSS*/
 
 @keyframes ms {
     0%{
         opacity: 0;
         transform:scale(1.6)
     }
-}
+}/*EN SCSS*/
 #menuPag {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+     display: flex;
     flex-wrap: nowrap;
-}
+}/*EN SCSS*/
 /*INDEX*/
 .indexDivs, .destinosDiv {
     display:flex;
@@ -84,111 +80,104 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
+} /*EN SCSS*/
 
 #indexDiv_1 {
-    min-height: 100vh;
-    width: 100%;
-    margin-top: 54px;
-    background-image: url(../imagenes/imagen1.JPG);
-}
+    min-height: 100vh;/*en scss*/
+    width: 100%;/*en scss*/
+    margin-top: 54px;/*en scss*/
+    background-image: url(../imagenes/imagen1.JPG);/*en scss*/
+}/*EN SCSS*/
 #indexDiv_2 {
-    background-image: url(../imagenes/imagen2.JPG);
-}
+    background-image: url(../imagenes/imagen2.JPG);/*en scss*/
+}/*EN SCSS*/
 #indexDiv_3 {
-    background-image: url(../imagenes/imagen3.JPG);
+    background-image: url(../imagenes/imagen3.JPG);/*en scss*/
 
-}
+}/*EN SCSS*/
 #indexDiv_4 {
-    background-image: url(../imagenes/imagen4.JPG);
+    background-image: url(../imagenes/imagen4.JPG);/*en scss*/
 
-}
+}/*EN SCSS*/
 #indexDiv_5 {
-    background-image: url(../imagenes/imagen5.JPG);
+    background-image: url(../imagenes/imagen5.JPG);/*en scss*/
 
-}
+}/*EN SCSS*/
 
 .interDivs, #parrafoPromociones, .interDivsDestinos {
-    width: 100%;
-    height: 170px;
+    width: 100%;/*en scss*/
+    height: 170px;/*en scss*/
     background-color: #fffffa;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Oswald";
     font-size: large;
-}
+}/* EN SCSS */
 .textDivitions, #titularPromocionesText, .destinosTitularDiv {
     text-align: center;
-    padding: 18px;
-    background-color: rgba(34, 33, 32, 0.5);
+    padding: 18px;/*en scss*/
+    background-color: rgba(34, 33, 32, 0.5);/*en scss*/
     color: white;
     font-size: 15px;
     font-family: "Oswald";
     letter-spacing: 10px;
-}
+}/*EN SCSS*/
 /*Destinos*/
 .carouselImages {
     height: 100vh;
-}  
+}/*EN SCSS*/
 
 #destinosDiv1, #destinosDiv2, #destinosDiv3, #destinosDiv4, #destinosDiv5, #destinosDiv6, #destinosDiv7, #destinosDiv8 {
     min-height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
-}
+}/*EN SCSS*/
 
 #destinosDiv1 {
     margin-top: 54px;
-    /* background-image: url(../imagenes/destinos1.jpg);s */
-}
+}/*EN SCSS*/
 #destinosDiv2 {
-    background-image: url(../imagenes/imagen3.JPG);
+    background-image: url(../imagenes/imagen3.JPG);/*en scss*/
 }
 #destinosDiv3 {
-    background-image: url(../imagenes/destinos3.jpg);
+    background-image: url(../imagenes/destinos3.jpg);/*en scss*/
 }
 #destinosDiv4 {
-    background-image: url(../imagenes/ImagenBGPromo.jpg);
+    background-image: url(../imagenes/ImagenBGPromo.jpg);/*en scss*/
 }
 #destinosDiv5 {
-    background-image: url(../imagenes/destinos5.jpg);
+    background-image: url(../imagenes/destinos5.jpg);/*en scss*/
 }
 #destinosDiv6 {
-    background-image: url(../imagenes/destinos6.jpg);
+    background-image: url(../imagenes/destinos6.jpg);/*en scss*/
 }
 #destinosDiv7 {
-    background-image: url(../imagenes/destinos7.jpg);
+    background-image: url(../imagenes/destinos7.jpg);/*en scss*/
 }
 #destinosDiv8 {
-    background-image: url(../imagenes/destinos8.jpg);
-}
+    background-image: url(../imagenes/destinos8.jpg);/*en scss*/
+}/*EN SCSS*/
 /*Promociones*/
-#bodyP3 {
-    height: 100%;
-    font-family: "Oswald";
-    
-}
 
 #titularPromociones {
     display:flex;
     align-items: center;
     justify-content: center;
-    min-height: 500px;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: url(../imagenes/ImagenBGPromo.jpg);
-}
+    min-height: 500px;/*en scss*/
+    width: 100%;/*en scss*/
+    background-position: center;/*en scss*/
+    background-size: cover;/*en scss*/
+    background-repeat: no-repeat;/*en scss*/
+    background-attachment: fixed;/*en scss*/
+    background-image: url(../imagenes/ImagenBGPromo.jpg);/*en scss*/
+} /*EN SCSS*/
 
 #títuloPromocionesP3 {
     display: flex;
     justify-content: center;
-
-}
+}/*EN SCSS*/
 
 #sectionPromociones {
     display: flex;
@@ -196,50 +185,39 @@ header {
     gap: 10px;
     justify-content: space-evenly;
     margin-bottom: 10px;
-
-    
-}
-.promocionesP3 {
-    border-top: 15px solid #c0b096;
-    background-color: rgba(243, 226, 199, 0.5);
-    border-radius: 10px;
-    padding: 15px;
-    
-}
+} /*EN SCSS*/
 
 /*Reservas*/
 #bodyP4 {
-    height: 100vh;
     font-family: "Oswald";
     background-image: url(../imagenes/ImagenBGP4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment:fixed ;
-}
+}/*EN SCSS*/
 
 #tituloReservas, #tituloContacto, #tituloMapa {
     margin-left: 10px;
-}
+}/*EN SCSS*/
 
 #reservasTitulo {
     margin-bottom: 10px;
     width: 100%;
-}
+}/*EN SCSS*/
 #formReserva, #formContact {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
-}
+}/*EN SCSS*/
 
 .inputP4, .inputP5 {
     margin: 10px;
     border-radius: 4px;
     height: 50px;
-}
+}/*EN SCSS*/
 
 .reservaSelect, #estadoCivilSelect {
-
     width: 287px;
     padding: 12px 20px;
     border: 1px solid #ccc;
@@ -247,14 +225,13 @@ header {
     color: Black;
     margin-top: 10px;
     margin-bottom: 10px;
-}
+} /*EN SCSS*/
 
 .p4Label, .p5Label {
     padding: 12px 12px 12px 0px;
     display:block;
     color: black;
-    
-}
+} /*EN SCSS*/
 
 #botonEnviarReserva, #botonEnviarContact {
     background-color: #c7f3db;
@@ -264,12 +241,11 @@ header {
     border-radius: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
-}
+}/*EN SCSS*/
 #botonEnviarReserva:hover, #botonEnviarContact:hover {
     background-color:#96c0a9;
     cursor: pointer;
-
-}
+}/*EN SCSS*/
 /*Contáctanos*/
 #bodyP5 {
 height: 100%;
@@ -277,18 +253,18 @@ font-family: "Oswald";
 background-image: url(../imagenes/ImagenesBGP5.jpg);
 background-repeat: no-repeat;
 background-attachment:fixed ;
-}
+}/*EN SCSS*/
 .textAreaP5 {
     margin-left: 10px;
     margin-right: 10px;
-}
+}/*EN SCSS*/
 .listaContacto {
     font-weight: bold;
-}
+}/*EN SCSS*/
 #videoP5 {
     width: 100%;
     margin-bottom: 15px;
-}
+}/*EN SCSSS*/
 
 /*HELP BUTTON*/
 #helpWidgetButton {
@@ -298,7 +274,7 @@ background-attachment:fixed ;
     padding-bottom: 35px;
     z-index: 100;
     padding: 0; 
-}
+}/*EN SCSS*/
 #helpButton {
     width: 45px;
     height: 45px;
@@ -312,7 +288,7 @@ background-attachment:fixed ;
     position: fixed;
     bottom: 20px;
     right: 20px;
-}
+}/*EN SCSS*/
 footer {
     display: flex;
     width: 100%;
@@ -324,7 +300,7 @@ footer {
     background-color: #c0b096;
     border-bottom: 15px solid #f3e2c7;
     font-style: default
-}
+}/*EN SCSS*/
 
 @media (max-width: 480px) {
     #hambMenuIcon {
@@ -431,25 +407,27 @@ footer {
     #pagIcon {
         justify-items: center;
     }
+    
     footer {
         font-size: small;
         max-width: 100%;
     }
+    /*HASTA ACÁ DE ESTA MEDIA QUERIE ESTÁ EN SCSS*/
     /* DestinosMobile */
     #carouselContenedorDiv {
         display: none;
-    }
+    }/*EN SCSS*/
     #destinosDiv1, #destinosDiv2, #destinosDiv3, #destinosDiv4, #destinosDiv5, #destinosDiv6, #destinosDiv7, #destinosDiv8 {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 100vh;
-    }
+    }/*EN SCSS*/
     #destinosDiv1 {
         margin-top: 54px;
         background-image: url(../imagenes/destinos1.jpg);
-    }
+    }/*EN SCSS*/
 
     
     /*PromocionesMobile*/
@@ -459,51 +437,38 @@ footer {
         align-items: center;
         flex-direction: column;
         max-width: 100%;
-    }
-    #mainPromociones {
-        max-width: 100%;
-    }
+    }/*EN SCSS*/
+  
+    
     .promocionesP3 {
         max-width: 100%;
         margin: 15px;
     }
-
+/*EN SCSS*/
     /*CONTÁCTANOS*/
-    #bodyP5 {
-        background-position: center;
-    }
-    #mainContact {
-        max-width: 100%;
 
-    }
     #divContact {
         align-items: center;
         max-width: 100%;
-    }
-    #formContact {
-        max-width: 100%;
-    }
+    }/*EN SCSS*/
+  
     #divFormReserva, #divContact, #patrocinador, #contactosAlternativos, #asideContactanos {
         background-color: rgba(243, 226, 199, 0.5);
         margin-top: 64px;
-    }
+    } /*EN SCSS*/
     #tituloMapa, .listaContacto {
         font-weight: bold;
-    }
+    }/*EN SCSS*/
     #ubicacionReal {
         max-width: 100%;
-    }
+    }/*EN SCSS*/
     .p5Label {
         font-weight: bold;
-    }
-
+    }/*EN SCSS*/
 }
 
 @media (min-width: 481px) and (max-width:1023px) {
-    #hambMenuIcon {
-        max-height: 100%;
-        padding-top: 1px;
-    }
+    
     #menuPag {
         display: none;
         flex-direction: column;
@@ -590,10 +555,11 @@ footer {
     }
     header {
         flex-direction: row-reverse;
-    }
+    }/*Hasta acá de esta media query está en SCSS*/
     /* DESTINOS MOBILE TABLET */
-   #carouselContenedorDiv {
-    display: none;
+   
+    #carouselContenedorDiv {
+    display: none;/*EN SCSS*/
 }
    #destinosDiv1, #destinosDiv2, #destinosDiv3, #destinosDiv4, #destinosDiv5, #destinosDiv6, #destinosDiv7, #destinosDiv8 {
     background-attachment: fixed;
@@ -601,11 +567,11 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-}
+}/*EN SCSS*/
    #destinosDiv1 {
     margin-top: 54px;
     background-image: url(../imagenes/destinos1.jpg);
-}
+} /*EN SCSS*/
     /*PROMOCIONES Y RESERVA*/
    #sectionPromociones {
         display: flex;
@@ -613,43 +579,35 @@ footer {
         align-items: center;
         flex-direction: column;
         max-width: 100%;
-    }
+    }/*EN SCSS*/
 
-    #mainPromociones {
-        max-width: 100%;
-    }
+
     .promocionesP3 {
         max-width: 100%;
         margin: 15px;
         width: 40%
-    }
-    #bodyP5 {
-        background-position: center;
-    }
-    #mainContact {
-        max-width: 100%;
+    }/*EN SCSS*/
 
-    }
     #divContact {
         align-items: center;
         max-width: 100%;
-    }
+    }/*EN SCSS*/
     #formContact {
         max-width: 100%;
-    }
+    }/*EN SCSS*/
     #divFormReserva, #divContact, #patrocinador, #contactosAlternativos, #asideContactanos {
         background-color: rgba(243, 226, 199, 0.5);
         margin-top: 64px;
-    }
+    }/*EN SCSS*/
     #tituloMapa, .listaContacto {
         font-weight: bold;
-    }
+    }/*EN SCSS*/
     #ubicacionReal {
         max-width: 100%;
-    }
+    }/*EN SCSS*/
     .p5Label {
         font-weight: bold;
-    }
+    }/*EN SCSS*/
 
 
 }
@@ -661,9 +619,10 @@ footer {
     #respMenu {
         display: none;
     }
+    /*HASTA ACÁ EN ESTA MEDAI QUERI ESTÁ EN SCSS*/
     #sectionDestinos {
         display: none;
-    }
+    }/*EN SCSS*/
     #divFormReserva, #divContact {
         background-color: rgba(243, 226, 199, 0.5);
         border-top: 5px solid #c0b096;
@@ -674,20 +633,20 @@ footer {
         margin-left: 200px;
         margin-bottom: 40px;
         border-radius: 3px;
-    }
+    }/*EN SCSS*/
     #patrocinador, #mapaUbicacion, #contactosAlternativos {
         background-color: rgba(243, 226, 199, 0.5);
         border-top: 5px solid #c0b096;
         width:60%;
-    }
+    }/*EN SCSS*/
     #mapaUbicacion, #contactosAlternativos {
         margin-top: 104px;
-    }
+    }/*EN SCSS*/
     /* DESTINOS */
     #carouselTextEuropa {
         color: black;
         font-weight: bold;
-    }
+    }/*EN SCSS*/
 
     /*Contactanos*/
     /*GRID AREAS*/
@@ -702,66 +661,66 @@ footer {
         ;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 3.443% 1fr 1fr 1fr 3.443%;
-    }
+    }/*EN SCSS*/
     #mainContact, #asideContactanos, #sectionPatrocinador,  #contactosAlternativos {
         max-width: 100%;
         max-height: 100%;
-    }
+    }/*EN SCSS*/
     #patrocinador, #contactosAlternativos, #divContact {
         width: 60%;
-    }
+    }/*EN SCSS*/
     
     /*Nombres Grid Areas*/
     #headerContacto {
         grid-area: headercontact;
-    }
+    }/*EN SCSS*/
 
     #mainContact {
         grid-area: maincontact;
 
-    }
+    }/*EN SCSS*/
 
     #asideContactanos {
         grid-area: mapacontact;
 
-    }
+    }/*EN SCSS*/
 
     #sectionPatrocinador {
         grid-area: sectionpatrocinador;
 
-    }
+    }/*EN SCSS*/
 
     #contactosAlternativos {
         grid-area: contactalt;
-    }
+    }/*EN SCSS*/
 
     #footerContacto {
         grid-area: footercontact;
-    }
+    }/*EN SCSS*/
     /*FIN NOMBRES GRIDAREAS*/
 
     #mapaUbicacion {
         padding: 5px;
         width: 60%;
-    }
+    }/*EN SCSS*/
     #ubicacionReal {
         max-width: 100%;
-    }
+    }/*EN SCSS*/
     #contactosAlternativos {
         height: 35%;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    }/*EN SCSS*/
     #tituloAlternativos{
         padding: 15px;
-    }
+    }/*EN SCSS*/
     #listaAlternativos {
         padding-left: 35px;
-    }
+    }/*EN SCSS*/
 
     /*PROMOCIONES*/
     .promocionesP3 {
         width: 10%;
-    }
+    }/*EN SCSS*/
 }

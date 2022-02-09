@@ -1,0 +1,54 @@
+#formReserva{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.inputP4 {
+    margin: 10px;
+    border-radius: 4px;
+    height: 50px;
+}
+.reservaSelect, #estadoCivilSelect {
+    width: 287px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: Black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.p4Label {
+    padding: 12px 12px 12px 0px;
+    display:block;
+    color: black;
+}
+
+#botonEnviarReserva {
+    background-color: #c7f3db;
+    margin-left: 80%;
+    font-family: "Oswald";
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#botonEnviarReserva:hover {
+    background-color:#96c0a9;
+    cursor: pointer;
+}
+@media (max-width: 480px) {
+    #divFormReserva {
+        background-color: rgba(243, 226, 199, 0.5);
+        margin-top: 64px;
+    }
+}
+@media (min-width: 481px) and (max-width:1023px) {
+    #divFormReserva {
+        background-color: rgba(243, 226, 199, 0.5);
+        margin-top: 64px;
+    }
+}

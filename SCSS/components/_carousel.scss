@@ -1,0 +1,52 @@
+@import "../utilities/functions";
+
+#carouselDestinos {
+    #carouselContenedorDiv {
+        #destinosDiv1, #destinosDiv2, #destinosDiv3, #destinosDiv4, #destinosDiv5, #destinosDiv6, #destinosDiv7, #destinosDiv8 {
+        min-height: 100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        }
+        
+        #destinosDiv1 {
+            margin-top: 54px;
+        }
+        #destinosDiv2 {
+            background-image: url(../imagenes/imagen3.JPG);
+        }
+        #destinosDiv3 {
+            background-image: url(../imagenes/destinos3.jpg);
+        }
+        #destinosDiv4 {
+            background-image: url(../imagenes/ImagenBGPromo.jpg);
+        }
+        #destinosDiv5 {
+            background-image: url(../imagenes/destinos5.jpg);
+        }
+        #destinosDiv6 {
+            background-image: url(../imagenes/destinos6.jpg);
+        }
+        #destinosDiv7 {
+            background-image: url(../imagenes/destinos7.jpg);
+        }
+        #destinosDiv8 {
+            background-image: url(../imagenes/destinos8.jpg);
+        }
+        .carouselImages {
+            height: 100vh;
+        }  
+        @media (max-width: 480px) {
+            display: none;
+            #carouselContenedorDiv {
+                display: none;
+            }
+        }
+        @media (min-width: 481px) and (max-width:1023px) {
+            display: none;
+            #carouselContenedorDiv {
+                display: none;
+            }
+        }
+    }
+}

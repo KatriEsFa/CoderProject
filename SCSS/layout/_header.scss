@@ -1,0 +1,286 @@
+@import "../utilities/variables";
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 54px;
+    background: $colorMain;
+    border-top: 15px solid $colorObscuro;
+    margin: 0;
+    font-family: "Oswald";
+    display:flex;
+    position: fixed;
+    flex-wrap: nowrap;
+    box-sizing: content-box;
+    z-index: 500;
+    #pagIcon {
+        height: 100%;
+    }
+    .navBar {
+        width: 100%;
+        margin: 0px;
+        height: 100%;
+        #menuPag {
+            list-style: none;
+             display: flex;
+            flex-wrap: nowrap;
+            .navBarButton {
+                background: $colorMain;
+                border: none;
+                color: black;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 16px;
+                margin-left: 0px;
+                margin-right: 0px;
+                float: left;
+                font-family: "Oswald";
+                cursor: pointer;
+                display: flex;
+                flex-wrap: nowrap;
+            }
+            .navBarButton:hover {
+                color:black;
+                z-index: 50;
+                background: $colorMain;
+                box-shadow: 0 8px 16px 0 $colorObscuro, 0 6px 20px 0 $colorObscuro;
+                transition-duration: 0.4s;
+                animation: 1s ms 1;
+            }
+            @keyframes ms {
+                0%{
+                    opacity: 0;
+                    transform:scale(1.6)
+                }
+            }
+        }
+        
+    }
+    @media (max-width: 480px) {
+        flex-direction: row-reverse;
+        
+        .navBar{
+            #menuPag {
+                position: fixed;
+                left: -500px;
+                width: 50%;
+                flex-direction: column;
+                box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.4);
+                transition: all .5s ease-in-out;
+                
+            }
+            #respMenu {
+                display: none;
+            }
+            #respMenu:checked ~ ul{
+                transform: translateX(500px);
+                display: flex;
+                flex-direction: column;
+                transition: all .5s ease-in-out;
+            }
+            #labelRespMenu {
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;        
+                border-radius: 5px;
+                width:50px ;
+                z-index: 1000;
+                height: 50px;
+                line-height: 30px;
+                font-weight: bold;
+                text-align: center;
+                user-select: none;
+                #menuBtn {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 80px;
+                    height: 100%;
+                    transition: all .5s ease-in-out;
+                    margin-left: 15px;
+                }
+                #menuBtnAnimation {
+                    width: 50px;
+                    height: 6px;
+                    background: $colorObscuro;
+                    border-radius: 5px;
+                    transition: all .5s ease-in-out;
+                  
+                    &::before, &::after {
+                      content: "";
+                      position: absolute;
+                      width: 50px;
+                      height: 6px;
+                      background: $colorObscuro;
+                      border-radius: 5px;
+                      transition: all .5s ease-in-out;
+                    }
+                  
+                    &::before {
+                      transform: translateY(-16px) translateX(-50%);
+                    }
+                  
+                    &::after {
+                      transform: translateY(16px) translateX(-50%);
+                    }
+                  }
+                  
+                  #respMenu:checked ~ #labelRespMenu > #menuBtn #menuBtnAnimation {
+                    transform: translateX(-70px);
+                    background: transparent;
+                    box-shadow: none;
+                  
+                    &::before {
+                      transform: rotate(45deg) translate(35px, -35px);
+                    }
+                  
+                    &::after {
+                      transform: rotate(-45deg) translate(35px, 35px);
+                    }
+                  }
+            }
+
+            #menuPag {
+                position: fixed;
+                left: -500px;
+                width: 50%;
+                flex-direction: column;
+                box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.4);
+                transition: all .5s ease-in-out;
+                .navBarButton {
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    text-align: center;
+                    border-bottom: 1px solid black;
+                   
+                }
+            }
+
+        }
+        #pagIcon {
+            justify-items: center;
+        }
+    
+    }
+    @media (min-width: 481px) and (max-width:1023px) {
+        flex-direction: row-reverse;
+        
+        .navBar{
+            #menuPag {
+                position: fixed;
+                left: -500px;
+                width: 50%;
+                flex-direction: column;
+                box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.4);
+                transition: all .5s ease-in-out; 
+            }
+
+            #respMenu {
+                display: none;
+            }
+
+            #respMenu:checked ~ ul{
+                transform: translateX(500px);
+                display: flex;
+                flex-direction: column;
+                transition: all .5s ease-in-out;
+            }
+
+            #labelRespMenu {
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;        
+                border-radius: 5px;
+                width:50px ;
+                z-index: 1000;
+                height: 50px;
+                line-height: 30px;
+                font-weight: bold;
+                text-align: center;
+                user-select: none;
+                #menuBtn {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 80px;
+                    height: 100%;
+                    transition: all .5s ease-in-out;
+                    margin-left: 15px;
+                }
+                #menuBtnAnimation {
+                    width: 50px;
+                    height: 6px;
+                    background: $colorObscuro;
+                    border-radius: 5px;
+                    transition: all .5s ease-in-out;
+                  
+                    &::before, &::after {
+                      content: "";
+                      position: absolute;
+                      width: 50px;
+                      height: 6px;
+                      background: $colorObscuro;
+                      border-radius: 5px;
+                      transition: all .5s ease-in-out;
+                    }
+                  
+                    &::before {
+                      transform: translateY(-16px) translateX(-50%);
+                    }
+                  
+                    &::after {
+                      transform: translateY(16px) translateX(-50%);
+                    }
+                  }
+                
+                #respMenu:checked ~ #labelRespMenu > #menuBtn #menuBtnAnimation {
+                    transform: translateX(-70px);
+                    background: transparent;
+                    box-shadow: none;
+                    &::before {
+                      transform: rotate(45deg) translate(35px, -35px);
+                    }
+                    &::after {
+                      transform: rotate(-45deg) translate(35px, 35px);
+                    }
+                  }
+            }
+
+            #menuPag {
+                position: fixed;
+                left: -500px;
+                width: 50%;
+                flex-direction: column;
+                box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.4);
+                transition: all .5s ease-in-out;
+                .navBarButton {
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    text-align: center;
+                    border-bottom: 1px solid black;
+                   
+                }
+            }
+
+        }
+        #pagIcon {
+            justify-items: center;
+        }
+    }
+    @media (min-width:1024px) {
+        #hambMenuIcon {
+            display: none;
+        }
+        #respMenu {
+            display: none;
+        }
+    }
+    
+    
+}

@@ -1,0 +1,190 @@
+#bodyP5 {
+    height: 100%;
+    background-image: url(../imagenes/ImagenesBGP5.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+}
+
+.textAreaP5 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#formContact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.inputP5 {
+    margin: 10px;
+    border-radius: 4px;
+    height: 50px;
+}
+
+.p5Label {
+    padding: 12px 12px 12px 0px;
+    display:block;
+    color: black; 
+}
+
+#botonEnviarContact {
+    background-color: #c7f3db;
+    margin-left: 80%;
+    font-family: "Oswald";
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#botonEnviarContact:hover {
+    background-color:#96c0a9;
+    cursor: pointer;
+}
+
+.listaContacto {
+    font-weight: bold;
+}
+
+#videoP5 {
+    width: 100%;
+    margin-bottom: 15px;
+}
+@media (max-width: 480px) {
+
+    #divContact {
+        align-items: center;
+        max-width: 100%;
+    }
+    #divContact, #contactosAlternativos, #patrocinador, #asideContactanos {
+        background-color: rgba(243, 226, 199, 0.5);
+        margin-top: 64px;
+    }
+
+    #tituloMapa, .listaContacto {
+        font-weight: bold;
+    }
+    #ubicacionReal {
+        max-width: 100%;
+    }
+    .p5Label {
+        font-weight: bold;
+    }
+}
+@media (min-width: 481px) and (max-width:1023px) {
+    #divContact {
+        align-items: center;
+        max-width: 100%;
+    }
+    #formContact {
+        max-width: 100%;
+    }
+    #divContact, #contactosAlternativos, #patrocinador, #asideContactanos {
+        background-color: rgba(243, 226, 199, 0.5);
+        margin-top: 64px;
+    }
+    #tituloMapa, .listaContacto {
+        font-weight: bold;
+    }
+    #ubicacionReal {
+        max-width: 100%;
+    }
+    .p5Label {
+        font-weight: bold;
+    }
+
+
+}
+@media (min-width:1024px) {
+
+    #divContact {
+        background-color: rgba(243, 226, 199, 0.5);
+        border-top: 5px solid #c0b096;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 104px;
+        margin-left: 200px;
+        margin-bottom: 40px;
+        border-radius: 3px;
+    }
+
+    #patrocinador, #mapaUbicacion, #contactosAlternativos {
+        background-color: rgba(243, 226, 199, 0.5);
+        border-top: 5px solid #c0b096;
+        width:60%;
+    }
+    #mapaUbicacion, #contactosAlternativos {
+        margin-top: 104px;
+    }
+
+    #bodyP5 {
+        display: grid;
+        grid-template-areas: 
+        "headercontact headercontact"
+        "maincontact mapacontact"
+        "maincontact contactalt"
+        "maincontact sectionpatrocinador"
+        "footercontact footercontact"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3.443% 1fr 1fr 1fr 3.443%;
+    }
+    
+    /*Nombres Grid Areas*/
+    #headerContacto {
+        grid-area: headercontact;
+    }
+
+    #mainContact {
+        grid-area: maincontact;
+
+    }
+
+    #asideContactanos {
+        grid-area: mapacontact;
+
+    }
+
+    #sectionPatrocinador {
+        grid-area: sectionpatrocinador;
+
+    }
+
+    #contactosAlternativos {
+        grid-area: contactalt;
+    }
+
+    #footerContacto {
+        grid-area: footercontact;
+    }
+    /*FIN NOMBRES GRIDAREAS*/
+    #mainContact, #asideContactanos, #sectionPatrocinador,  #contactosAlternativos {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    #patrocinador, #contactosAlternativos, #divContact {
+        width: 60%;
+    }
+    #mapaUbicacion {
+        padding: 5px;
+        width: 60%;
+    }
+    #ubicacionReal {
+        max-width: 100%;
+    }
+    #contactosAlternativos {
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #tituloAlternativos{
+        padding: 15px;
+    }
+    #listaAlternativos {
+        padding-left: 35px;
+    }
+}

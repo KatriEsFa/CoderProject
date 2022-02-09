@@ -1,0 +1,676 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Oswald:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Oswald:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Oswald"; }
+
+#bodyP4 {
+  background-image: url(../imagenes/ImagenBGP4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+#carouselDestinos #carouselContenedorDiv #destinosDiv1, #carouselDestinos #carouselContenedorDiv #destinosDiv2, #carouselDestinos #carouselContenedorDiv #destinosDiv3, #carouselDestinos #carouselContenedorDiv #destinosDiv4, #carouselDestinos #carouselContenedorDiv #destinosDiv5, #carouselDestinos #carouselContenedorDiv #destinosDiv6, #carouselDestinos #carouselContenedorDiv #destinosDiv7, #carouselDestinos #carouselContenedorDiv #destinosDiv8 {
+  min-height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+#carouselDestinos #carouselContenedorDiv #destinosDiv1 {
+  margin-top: 54px; }
+
+#carouselDestinos #carouselContenedorDiv #destinosDiv2 {
+  background-image: url(../imagenes/imagen3.JPG); }
+
+#carouselDestinos #carouselContenedorDiv #destinosDiv3 {
+  background-image: url(../imagenes/destinos3.jpg); }
+
+#carouselDestinos #carouselContenedorDiv #destinosDiv4 {
+  background-image: url(../imagenes/ImagenBGPromo.jpg); }
+
+#carouselDestinos #carouselContenedorDiv #destinosDiv5 {
+  background-image: url(../imagenes/destinos5.jpg); }
+
+#carouselDestinos #carouselContenedorDiv #destinosDiv6 {
+  background-image: url(../imagenes/destinos6.jpg); }
+
+#carouselDestinos #carouselContenedorDiv #destinosDiv7 {
+  background-image: url(../imagenes/destinos7.jpg); }
+
+#carouselDestinos #carouselContenedorDiv #destinosDiv8 {
+  background-image: url(../imagenes/destinos8.jpg); }
+
+#carouselDestinos #carouselContenedorDiv .carouselImages {
+  height: 100vh; }
+
+@media (max-width: 480px) {
+  #carouselDestinos #carouselContenedorDiv {
+    display: none; }
+    #carouselDestinos #carouselContenedorDiv #carouselContenedorDiv {
+      display: none; } }
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  #carouselDestinos #carouselContenedorDiv {
+    display: none; }
+    #carouselDestinos #carouselContenedorDiv #carouselContenedorDiv {
+      display: none; } }
+
+#helpWidgetButton {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 35px;
+  padding-bottom: 35px;
+  z-index: 100;
+  padding: 0; }
+
+#helpButton {
+  width: 45px;
+  height: 45px;
+  background-color: rgba(243, 226, 199, 0.5);
+  border-radius: 50%;
+  background-image: url(../imagenes/helpIcon.svg);
+  position: absolute;
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 20px;
+  right: 20px; }
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 54px;
+  background: #f3e2c7;
+  border-top: 15px solid #c0b096;
+  margin: 0;
+  font-family: "Oswald";
+  display: flex;
+  position: fixed;
+  flex-wrap: nowrap;
+  box-sizing: content-box;
+  z-index: 500; }
+  header #pagIcon {
+    height: 100%; }
+  header .navBar {
+    width: 100%;
+    margin: 0px;
+    height: 100%; }
+    header .navBar #menuPag {
+      list-style: none;
+      display: flex;
+      flex-wrap: nowrap; }
+      header .navBar #menuPag .navBarButton {
+        background: #f3e2c7;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin-left: 0px;
+        margin-right: 0px;
+        float: left;
+        font-family: "Oswald";
+        cursor: pointer;
+        display: flex;
+        flex-wrap: nowrap; }
+      header .navBar #menuPag .navBarButton:hover {
+        color: black;
+        z-index: 50;
+        background: #f3e2c7;
+        box-shadow: 0 8px 16px 0 #c0b096, 0 6px 20px 0 #c0b096;
+        transition-duration: 0.4s;
+        animation: 1s ms 1; }
+
+@keyframes ms {
+  0% {
+    opacity: 0;
+    transform: scale(1.6); } }
+  @media (max-width: 480px) {
+    header {
+      flex-direction: row-reverse; }
+      header .navBar #menuPag {
+        position: fixed;
+        left: -500px;
+        width: 50%;
+        flex-direction: column;
+        box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.4);
+        transition: all .5s ease-in-out; }
+      header .navBar #respMenu {
+        display: none; }
+      header .navBar #respMenu:checked ~ ul {
+        transform: translateX(500px);
+        display: flex;
+        flex-direction: column;
+        transition: all .5s ease-in-out; }
+      header .navBar #labelRespMenu {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        width: 50px;
+        z-index: 1000;
+        height: 50px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none; }
+        header .navBar #labelRespMenu #menuBtn {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80px;
+          height: 100%;
+          transition: all .5s ease-in-out;
+          margin-left: 15px; }
+        header .navBar #labelRespMenu #menuBtnAnimation {
+          width: 50px;
+          height: 6px;
+          background: #c0b096;
+          border-radius: 5px;
+          transition: all .5s ease-in-out; }
+          header .navBar #labelRespMenu #menuBtnAnimation::before, header .navBar #labelRespMenu #menuBtnAnimation::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 6px;
+            background: #c0b096;
+            border-radius: 5px;
+            transition: all .5s ease-in-out; }
+          header .navBar #labelRespMenu #menuBtnAnimation::before {
+            transform: translateY(-16px) translateX(-50%); }
+          header .navBar #labelRespMenu #menuBtnAnimation::after {
+            transform: translateY(16px) translateX(-50%); }
+        header .navBar #labelRespMenu #respMenu:checked ~ #labelRespMenu > #menuBtn #menuBtnAnimation {
+          transform: translateX(-70px);
+          background: transparent;
+          box-shadow: none; }
+          header .navBar #labelRespMenu #respMenu:checked ~ #labelRespMenu > #menuBtn #menuBtnAnimation::before {
+            transform: rotate(45deg) translate(35px, -35px); }
+          header .navBar #labelRespMenu #respMenu:checked ~ #labelRespMenu > #menuBtn #menuBtnAnimation::after {
+            transform: rotate(-45deg) translate(35px, 35px); }
+      header .navBar #menuPag {
+        position: fixed;
+        left: -500px;
+        width: 50%;
+        flex-direction: column;
+        box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.4);
+        transition: all .5s ease-in-out; }
+        header .navBar #menuPag .navBarButton {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          text-align: center;
+          border-bottom: 1px solid black; }
+      header #pagIcon {
+        justify-items: center; } }
+  @media (min-width: 481px) and (max-width: 1023px) {
+    header {
+      flex-direction: row-reverse; }
+      header .navBar #menuPag {
+        position: fixed;
+        left: -500px;
+        width: 50%;
+        flex-direction: column;
+        box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.4);
+        transition: all .5s ease-in-out; }
+      header .navBar #respMenu {
+        display: none; }
+      header .navBar #respMenu:checked ~ ul {
+        transform: translateX(500px);
+        display: flex;
+        flex-direction: column;
+        transition: all .5s ease-in-out; }
+      header .navBar #labelRespMenu {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        width: 50px;
+        z-index: 1000;
+        height: 50px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none; }
+        header .navBar #labelRespMenu #menuBtn {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80px;
+          height: 100%;
+          transition: all .5s ease-in-out;
+          margin-left: 15px; }
+        header .navBar #labelRespMenu #menuBtnAnimation {
+          width: 50px;
+          height: 6px;
+          background: #c0b096;
+          border-radius: 5px;
+          transition: all .5s ease-in-out; }
+          header .navBar #labelRespMenu #menuBtnAnimation::before, header .navBar #labelRespMenu #menuBtnAnimation::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 6px;
+            background: #c0b096;
+            border-radius: 5px;
+            transition: all .5s ease-in-out; }
+          header .navBar #labelRespMenu #menuBtnAnimation::before {
+            transform: translateY(-16px) translateX(-50%); }
+          header .navBar #labelRespMenu #menuBtnAnimation::after {
+            transform: translateY(16px) translateX(-50%); }
+        header .navBar #labelRespMenu #respMenu:checked ~ #labelRespMenu > #menuBtn #menuBtnAnimation {
+          transform: translateX(-70px);
+          background: transparent;
+          box-shadow: none; }
+          header .navBar #labelRespMenu #respMenu:checked ~ #labelRespMenu > #menuBtn #menuBtnAnimation::before {
+            transform: rotate(45deg) translate(35px, -35px); }
+          header .navBar #labelRespMenu #respMenu:checked ~ #labelRespMenu > #menuBtn #menuBtnAnimation::after {
+            transform: rotate(-45deg) translate(35px, 35px); }
+      header .navBar #menuPag {
+        position: fixed;
+        left: -500px;
+        width: 50%;
+        flex-direction: column;
+        box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.4);
+        transition: all .5s ease-in-out; }
+        header .navBar #menuPag .navBarButton {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          text-align: center;
+          border-bottom: 1px solid black; }
+      header #pagIcon {
+        justify-items: center; } }
+  @media (min-width: 1024px) {
+    header #hambMenuIcon {
+      display: none; }
+    header #respMenu {
+      display: none; } }
+
+footer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 54px;
+  background-color: #c0b096;
+  border-bottom: 15px solid #f3e2c7;
+  font-style: default; }
+  @media (max-width: 480px) {
+    footer {
+      font-size: small;
+      max-width: 100%; } }
+
+.destinosDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+#destinosDiv1, #destinosDiv2, #destinosDiv3, #destinosDiv4, #destinosDiv5, #destinosDiv6, #destinosDiv7, #destinosDiv8 {
+  min-height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+#destinosDiv1 {
+  margin-top: 54px; }
+
+#parrafoPromociones, .interDivsDestinos {
+  width: 100%;
+  height: 170px;
+  background-color: #fffffa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large; }
+
+#titularPromociones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(../imagenes/ImagenBGPromo.jpg); }
+
+#titularPromocionesText, .destinosTitularDiv {
+  text-align: center;
+  padding: 18px;
+  background-color: rgba(34, 33, 32, 0.5);
+  color: white;
+  font-size: 15px;
+  font-family: "Oswald";
+  letter-spacing: 10px; }
+
+#títuloPromocionesP3 {
+  display: flex;
+  justify-content: center; }
+
+#sectionPromociones {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-evenly;
+  margin-bottom: 10px; }
+
+/*RESERVAS*/
+#tituloReservas, #tituloContacto, #tituloMapa {
+  margin-left: 10px; }
+
+#reservasTitulo {
+  margin-bottom: 10px;
+  width: 100%; }
+
+@media (max-width: 480px) {
+  #destinosDiv1, #destinosDiv2, #destinosDiv3, #destinosDiv4, #destinosDiv5, #destinosDiv6, #destinosDiv7, #destinosDiv8 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; }
+  #destinosDiv1 {
+    margin-top: 54px;
+    background-image: url(../imagenes/destinos1.jpg); }
+  /*PromocionesMobile*/
+  #sectionPromociones {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%; }
+  .promocionesP3 {
+    max-width: 100%;
+    margin: 15px; } }
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  #destinosDiv1, #destinosDiv2, #destinosDiv3, #destinosDiv4, #destinosDiv5, #destinosDiv6, #destinosDiv7, #destinosDiv8 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; }
+  #destinosDiv1 {
+    margin-top: 54px;
+    background-image: url(../imagenes/destinos1.jpg); }
+  #sectionPromociones {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%; }
+  .promocionesP3 {
+    max-width: 100%;
+    margin: 15px;
+    width: 40%; } }
+
+@media (min-width: 1024px) {
+  #sectionDestinos {
+    display: none; }
+  #carouselTextEuropa {
+    color: black;
+    font-weight: bold; }
+  #divFormReserva {
+    background-color: rgba(243, 226, 199, 0.5);
+    border-top: 5px solid #c0b096;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 104px;
+    margin-left: 200px;
+    margin-bottom: 40px;
+    border-radius: 3px; }
+  .promocionesP3 {
+    width: 10%; } }
+
+#formReserva {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.inputP4 {
+  margin: 10px;
+  border-radius: 4px;
+  height: 50px; }
+
+.reservaSelect, #estadoCivilSelect {
+  width: 287px;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: Black;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.p4Label {
+  padding: 12px 12px 12px 0px;
+  display: block;
+  color: black; }
+
+#botonEnviarReserva {
+  background-color: #c7f3db;
+  margin-left: 80%;
+  font-family: "Oswald";
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px; }
+
+#botonEnviarReserva:hover {
+  background-color: #96c0a9;
+  cursor: pointer; }
+
+@media (max-width: 480px) {
+  #divFormReserva {
+    background-color: rgba(243, 226, 199, 0.5);
+    margin-top: 64px; } }
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  #divFormReserva {
+    background-color: rgba(243, 226, 199, 0.5);
+    margin-top: 64px; } }
+
+#bodyP5 {
+  height: 100%;
+  background-image: url(../imagenes/ImagenesBGP5.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.textAreaP5 {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+#formContact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.inputP5 {
+  margin: 10px;
+  border-radius: 4px;
+  height: 50px; }
+
+.p5Label {
+  padding: 12px 12px 12px 0px;
+  display: block;
+  color: black; }
+
+#botonEnviarContact {
+  background-color: #c7f3db;
+  margin-left: 80%;
+  font-family: "Oswald";
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px; }
+
+#botonEnviarContact:hover {
+  background-color: #96c0a9;
+  cursor: pointer; }
+
+.listaContacto {
+  font-weight: bold; }
+
+#videoP5 {
+  width: 100%;
+  margin-bottom: 15px; }
+
+@media (max-width: 480px) {
+  #divContact {
+    align-items: center;
+    max-width: 100%; }
+  #divContact, #contactosAlternativos, #patrocinador, #asideContactanos {
+    background-color: rgba(243, 226, 199, 0.5);
+    margin-top: 64px; }
+  #tituloMapa, .listaContacto {
+    font-weight: bold; }
+  #ubicacionReal {
+    max-width: 100%; }
+  .p5Label {
+    font-weight: bold; } }
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  #divContact {
+    align-items: center;
+    max-width: 100%; }
+  #formContact {
+    max-width: 100%; }
+  #divContact, #contactosAlternativos, #patrocinador, #asideContactanos {
+    background-color: rgba(243, 226, 199, 0.5);
+    margin-top: 64px; }
+  #tituloMapa, .listaContacto {
+    font-weight: bold; }
+  #ubicacionReal {
+    max-width: 100%; }
+  .p5Label {
+    font-weight: bold; } }
+
+@media (min-width: 1024px) {
+  #divContact {
+    background-color: rgba(243, 226, 199, 0.5);
+    border-top: 5px solid #c0b096;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 104px;
+    margin-left: 200px;
+    margin-bottom: 40px;
+    border-radius: 3px; }
+  #patrocinador, #mapaUbicacion, #contactosAlternativos {
+    background-color: rgba(243, 226, 199, 0.5);
+    border-top: 5px solid #c0b096;
+    width: 60%; }
+  #mapaUbicacion, #contactosAlternativos {
+    margin-top: 104px; }
+  #bodyP5 {
+    display: grid;
+    grid-template-areas: "headercontact headercontact" "maincontact mapacontact" "maincontact contactalt" "maincontact sectionpatrocinador" "footercontact footercontact";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3.443% 1fr 1fr 1fr 3.443%; }
+  /*Nombres Grid Areas*/
+  #headerContacto {
+    grid-area: headercontact; }
+  #mainContact {
+    grid-area: maincontact; }
+  #asideContactanos {
+    grid-area: mapacontact; }
+  #sectionPatrocinador {
+    grid-area: sectionpatrocinador; }
+  #contactosAlternativos {
+    grid-area: contactalt; }
+  #footerContacto {
+    grid-area: footercontact; }
+  /*FIN NOMBRES GRIDAREAS*/
+  #mainContact, #asideContactanos, #sectionPatrocinador, #contactosAlternativos {
+    max-width: 100%;
+    max-height: 100%; }
+  #patrocinador, #contactosAlternativos, #divContact {
+    width: 60%; }
+  #mapaUbicacion {
+    padding: 5px;
+    width: 60%; }
+  #ubicacionReal {
+    max-width: 100%; }
+  #contactosAlternativos {
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #tituloAlternativos {
+    padding: 15px; }
+  #listaAlternativos {
+    padding-left: 35px; } }
+
+body {
+  font-family: "Oswald"; }
+
+.indexDivs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+#indexDiv_1 {
+  min-height: 100vh;
+  width: 100%;
+  margin-top: 54px;
+  background-image: url(../imagenes/imagen1.JPG); }
+
+#indexDiv_2 {
+  background-image: url(../imagenes/imagen2.JPG); }
+
+#indexDiv_3 {
+  background-image: url(../imagenes/imagen3.JPG); }
+
+#indexDiv_4 {
+  background-image: url(../imagenes/imagen4.JPG); }
+
+#indexDiv_5 {
+  background-image: url(../imagenes/imagen5.JPG); }
+
+.interDivs {
+  width: 100%;
+  height: 170px;
+  background-color: #fffffa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald";
+  font-size: large; }
+
+.textDivitions {
+  text-align: center;
+  padding: 18px;
+  /*en scss*/
+  background-color: rgba(34, 33, 32, 0.5);
+  /*en scss*/
+  color: white;
+  font-size: 15px;
+  font-family: "Oswald";
+  letter-spacing: 10px; }

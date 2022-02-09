@@ -1,0 +1,22 @@
+#helpWidgetButton {
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 35px;
+    padding-bottom: 35px;
+    z-index: 100;
+    padding: 0; 
+}
+#helpButton {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(243, 226, 199, 0.5);
+    border-radius: 50%;
+    background-image: url(../imagenes/helpIcon.svg);
+    position: absolute;
+    float: right;
+    display:flex;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

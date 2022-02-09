@@ -1,0 +1,185 @@
+@import "../utilities/variables";
+
+.destinosDiv {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#destinosDiv1, #destinosDiv2, #destinosDiv3, #destinosDiv4, #destinosDiv5, #destinosDiv6, #destinosDiv7, #destinosDiv8 {
+    min-height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#destinosDiv1 {
+    margin-top: 54px;
+}
+#destinosDiv2 {
+    background-image: url(../imagenes/imagen3.JPG);
+}
+#destinosDiv3 {
+    background-image: url(../imagenes/destinos3.jpg);
+}
+#destinosDiv4 {
+    background-image: url(../imagenes/ImagenBGPromo);
+}
+#destinosDiv5 {
+    background-image: url(../imagenes/destinos5.jpg);
+}
+#destinosDiv6 {
+    background-image: url(../imagenes/destinos6.jpg);
+}
+#destinosDiv7 {
+    background-image: url(../imagenes/destinos7.jpg);
+}
+#destinosDiv8 {
+    background-image: url(../imagenes/destinos8.jpg);
+}
+
+#parrafoPromociones, .interDivsDestinos {
+    width: 100%;
+    height: 170px;
+    background-color: $colorClaro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+#titularPromociones {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../imagenes/ImagenBGPromo.jpg);
+}
+
+#titularPromocionesText, .destinosTitularDiv {
+    text-align: center;
+    padding: 18px;
+    background-color: rgba(34, 33, 32, 0.5);
+    color: white;
+    font-size: 15px;
+    font-family: "Oswald";
+    letter-spacing: 10px;
+}
+
+
+#títuloPromocionesP3 {
+    display: flex;
+    justify-content: center;
+
+}
+
+#sectionPromociones {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-evenly;
+    margin-bottom: 10px;    
+}
+
+/*RESERVAS*/
+#tituloReservas, #tituloContacto, #tituloMapa {
+    margin-left: 10px;
+}
+
+#reservasTitulo {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    #destinosDiv1, #destinosDiv2, #destinosDiv3, #destinosDiv4, #destinosDiv5, #destinosDiv6, #destinosDiv7, #destinosDiv8 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+    #destinosDiv1 {
+        margin-top: 54px;
+        background-image: url(../imagenes/destinos1.jpg);
+    }
+    /*PromocionesMobile*/
+    #sectionPromociones {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .promocionesP3 {
+        max-width: 100%;
+        margin: 15px;
+    }
+}
+
+@media (min-width: 481px) and (max-width:1023px) {
+
+    #destinosDiv1, #destinosDiv2, #destinosDiv3, #destinosDiv4, #destinosDiv5, #destinosDiv6, #destinosDiv7, #destinosDiv8 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    #destinosDiv1 {
+        margin-top: 54px;
+        background-image: url(../imagenes/destinos1.jpg);
+    }
+
+    #sectionPromociones {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .promocionesP3 {
+        max-width: 100%;
+        margin: 15px;
+        width: 40%
+    }
+
+}
+
+@media (min-width:1024px) {
+    #sectionDestinos {
+        display: none;
+    }
+    #carouselTextEuropa {
+        color: black;
+        font-weight: bold;
+    }
+
+    #divFormReserva {
+        background-color: rgba(243, 226, 199, 0.5);
+        border-top: 5px solid #c0b096;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 104px;
+        margin-left: 200px;
+        margin-bottom: 40px;
+        border-radius: 3px;
+    }
+    
+    .promocionesP3 {
+        width: 10%;
+    }
+}
+

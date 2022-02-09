@@ -1,0 +1,18 @@
+@import "../utilities/variables";
+
+footer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+    background-color: $colorObscuro;
+    border-bottom: 15px solid $colorMain;
+    font-style: default;
+    @media (max-width: 480px) {
+        font-size: small;
+        max-width: 100%;    
+    }
+}
