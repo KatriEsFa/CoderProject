@@ -104,7 +104,8 @@ header {
     header .navBar #menuPag {
       list-style: none;
       display: flex;
-      flex-wrap: nowrap; }
+      flex-wrap: nowrap;
+      padding-left: 0; }
       header .navBar #menuPag .navBarButton {
         background: #f3e2c7;
         border: none;
@@ -170,32 +171,32 @@ header {
           height: 100%;
           transition: all .5s ease-in-out;
           margin-left: 15px; }
-        header .navBar #labelRespMenu #menuBtnAnimation {
-          width: 50px;
-          height: 6px;
-          background: #c0b096;
-          border-radius: 5px;
-          transition: all .5s ease-in-out; }
-          header .navBar #labelRespMenu #menuBtnAnimation::before, header .navBar #labelRespMenu #menuBtnAnimation::after {
-            content: "";
-            position: absolute;
+          header .navBar #labelRespMenu #menuBtn #menuBtnAnimation {
             width: 50px;
             height: 6px;
             background: #c0b096;
             border-radius: 5px;
             transition: all .5s ease-in-out; }
-          header .navBar #labelRespMenu #menuBtnAnimation::before {
-            transform: translateY(-16px) translateX(-50%); }
-          header .navBar #labelRespMenu #menuBtnAnimation::after {
-            transform: translateY(16px) translateX(-50%); }
-        header .navBar #labelRespMenu #respMenu:checked ~ #labelRespMenu > #menuBtn #menuBtnAnimation {
-          transform: translateX(-70px);
-          background: transparent;
-          box-shadow: none; }
-          header .navBar #labelRespMenu #respMenu:checked ~ #labelRespMenu > #menuBtn #menuBtnAnimation::before {
-            transform: rotate(45deg) translate(35px, -35px); }
-          header .navBar #labelRespMenu #respMenu:checked ~ #labelRespMenu > #menuBtn #menuBtnAnimation::after {
-            transform: rotate(-45deg) translate(35px, 35px); }
+            header .navBar #labelRespMenu #menuBtn #menuBtnAnimation:before, header .navBar #labelRespMenu #menuBtn #menuBtnAnimation:after {
+              content: "";
+              position: absolute;
+              width: 50px;
+              height: 6px;
+              background: #c0b096;
+              border-radius: 5px;
+              transition: all .5s ease-in-out; }
+            header .navBar #labelRespMenu #menuBtn #menuBtnAnimation:before {
+              transform: translateY(-16px) translateX(-50%); }
+            header .navBar #labelRespMenu #menuBtn #menuBtnAnimation:after {
+              transform: translateY(16px) translateX(-50%); }
+            header .navBar #labelRespMenu #menuBtn #menuBtnAnimation #respMenu:checked ~ #labelRespMenu > #menuBtn #menuBtnAnimation {
+              transform: translateX(-70px);
+              background: transparent;
+              box-shadow: none; }
+            header .navBar #labelRespMenu #menuBtn #menuBtnAnimation #respMenu:checked ~ #labelRespMenu > #menuBtn #menuBtnAnimation::before {
+              transform: rotate(45deg) translate(35px, -35px); }
+            header .navBar #labelRespMenu #menuBtn #menuBtnAnimation #respMenu:checked ~ #labelRespMenu > #menuBtn #menuBtnAnimation::after {
+              transform: rotate(-45deg) translate(35px, 35px); }
       header .navBar #menuPag {
         position: fixed;
         left: -500px;
