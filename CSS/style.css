@@ -477,7 +477,7 @@ footer {
   border-radius: 4px;
   height: 50px; }
 
-.reservaSelect, #estadoCivilSelect {
+.estadoCivilSelect, .reservaSelect {
   width: 287px;
   padding: 12px 20px;
   border: 1px solid #ccc;
@@ -485,6 +485,9 @@ footer {
   color: Black;
   margin-top: 10px;
   margin-bottom: 10px; }
+
+.reservaSelect {
+  border: 10px solid black; }
 
 .p4Label {
   padding: 12px 12px 12px 0px;

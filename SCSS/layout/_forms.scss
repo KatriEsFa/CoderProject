@@ -1,16 +1,21 @@
+@import "../utilities/variables";
 #formReserva{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
 }
-
-.inputP4 {
-    margin: 10px;
-    border-radius: 4px;
-    height: 50px;
+//MIXIN INPUT FORM
+@mixin inputForma ($M, $BR, $H){
+    margin: $M;
+    border-radius: $BR;
+    height: $H;
 }
-.reservaSelect, #estadoCivilSelect {
+.inputP4 {
+    @include inputForma(10px, 4px, 50px)
+}
+//Fin Mixin
+.estadoCivilSelect {
     width: 287px;
     padding: 12px 20px;
     border: 1px solid #ccc;
@@ -19,7 +24,12 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
+//EXTEND
+.reservaSelect {
+    @extend .estadoCivilSelect;
+    border: 10px solid black
+}
+//Fin EXTEND
 .p4Label {
     padding: 12px 12px 12px 0px;
     display:block;
