@@ -664,9 +664,6 @@ body {
   background-attachment: fixed; }
 
 #indexDiv_1 {
-  min-height: 100vh;
-  width: 100%;
-  margin-top: 54px;
   background-image: url(../imagenes/imagen1.JPG); }
 
 #indexDiv_2 {
@@ -680,6 +677,11 @@ body {
 
 #indexDiv_5 {
   background-image: url(../imagenes/imagen5.JPG); }
+
+#indexDiv_1 {
+  min-height: 100vh;
+  width: 100%;
+  margin-top: 54px; }
 
 .interDivs {
   width: 100%;

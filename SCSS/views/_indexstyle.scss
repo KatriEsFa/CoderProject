@@ -12,25 +12,26 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+//Comienzo Map
+$backgrounds:(
+    Div_1: url(../imagenes/imagen1.JPG),
+    Div_2: url(../imagenes/imagen2.JPG),
+    Div_3: url(../imagenes/imagen3.JPG),
+    Div_4: url(../imagenes/imagen4.JPG),
+    Div_5: url(../imagenes/imagen5.JPG)
+);
+
+@each $divsBG, $bgImages in $backgrounds {
+    #index#{$divsBG} {
+        background-image: $bgImages;
+
+    }
+}
+//Fin Map
 #indexDiv_1 {
     min-height: 100vh;
     width: 100%;
     margin-top: 54px;
-    background-image: url(../imagenes/imagen1.JPG);
-}
-#indexDiv_2 {
-    background-image: url(../imagenes/imagen2.JPG);
-}
-#indexDiv_3 {
-    background-image: url(../imagenes/imagen3.JPG);
-}
-#indexDiv_4 {
-    background-image: url(../imagenes/imagen4.JPG);
-
-}
-#indexDiv_5 {
-    background-image: url(../imagenes/imagen5.JPG);
-
 }
 .interDivs{
     width: 100%;
