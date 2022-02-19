@@ -313,7 +313,13 @@ footer {
   @media (max-width: 480px) {
     footer {
       font-size: small;
-      max-width: 100%; } }
+      max-width: 100%;
+      height: 60px; } }
+  @media (min-width: 481px) and (max-width: 1023px) {
+    footer {
+      font-size: small;
+      max-width: 100%;
+      height: 60px; } }
 
 .destinosDiv {
   display: flex;
@@ -333,7 +339,7 @@ footer {
   background-size: 100%; }
 
 #destinosDiv1 {
-  margin-top: 54px; }
+  background-image: url(../imagenes/destinos1.jpg); }
 
 #destinosDiv2 {
   background-image: url(../imagenes/imagen3.JPG); }
@@ -355,6 +361,9 @@ footer {
 
 #destinosDiv8 {
   background-image: url(../imagenes/destinos8.jpg); }
+
+#destinosDiv1 {
+  margin-top: 54px; }
 
 #parrafoPromociones, .interDivsDestinos {
   width: 100%;
@@ -450,9 +459,9 @@ footer {
 @media (min-width: 1024px) {
   #sectionDestinos {
     display: none; }
-  #carouselTextEuropa {
-    color: black;
-    font-weight: bold; }
+  .carouselTextBlack {
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; }
   #divFormReserva {
     background-color: rgba(243, 226, 199, 0.5);
     border-top: 5px solid #c0b096;
