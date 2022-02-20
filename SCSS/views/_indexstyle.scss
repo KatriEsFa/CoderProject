@@ -52,3 +52,38 @@ $backgrounds:(
     font-family: "Oswald";
     letter-spacing: 10px;
 }
+
+@media (max-width: 480px) {
+        $backgrounds:(
+        Div_1: url(../imagenes/imagen1Cellphone.JPG),
+        Div_2: url(../imagenes/imagen2Cellphone.JPG),
+        Div_3: url(../imagenes/imagen3Cellphone.JPG),
+        Div_4: url(../imagenes/imagen4Cellphone.JPG),
+        Div_5: url(../imagenes/imagen5Cellphone.JPG)
+    );
+
+    @each $divsBG, $bgImages in $backgrounds {
+        #index#{$divsBG} {
+            background-image: $bgImages;
+
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+        $backgrounds:(
+        Div_1: url(../imagenes/imagen1Tablet.JPG),
+        Div_2: url(../imagenes/imagen2Tablet.JPG),
+        Div_3: url(../imagenes/imagen3Tablet.JPG),
+        Div_4: url(../imagenes/imagen4Tablet.JPG),
+        Div_5: url(../imagenes/imagen5Tablet.JPG)
+    );
+
+    @each $divsBG, $bgImages in $backgrounds {
+        #index#{$divsBG} {
+            background-image: $bgImages;
+
+        }
+}
+    
+}

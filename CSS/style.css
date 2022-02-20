@@ -13,6 +13,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
+  @media (max-width: 480px) {
+    #bodyP4 {
+      background-image: url(../imagenes/ImagenBGP4Cellphone.jpg); } }
+  @media (min-width: 481px) and (max-width: 1023px) {
+    #bodyP4 {
+      background-image: url(../imagenes/ImagenBGP4Tablet.jpg); } }
 
 #carouselDestinos #carouselContenedorDiv #destinosDiv1, #carouselDestinos #carouselContenedorDiv #destinosDiv2, #carouselDestinos #carouselContenedorDiv #destinosDiv3, #carouselDestinos #carouselContenedorDiv #destinosDiv4, #carouselDestinos #carouselContenedorDiv #destinosDiv5, #carouselDestinos #carouselContenedorDiv #destinosDiv6, #carouselDestinos #carouselContenedorDiv #destinosDiv7, #carouselDestinos #carouselContenedorDiv #destinosDiv8 {
   min-height: 100vh;
@@ -21,7 +27,7 @@ body {
   background-size: 100%; }
 
 #carouselDestinos #carouselContenedorDiv #destinosDiv1 {
-  margin-top: 54px; }
+  background-image: url(../imagenes/destinos1.jpg); }
 
 #carouselDestinos #carouselContenedorDiv #destinosDiv2 {
   background-image: url(../imagenes/imagen3.JPG); }
@@ -44,6 +50,9 @@ body {
 #carouselDestinos #carouselContenedorDiv #destinosDiv8 {
   background-image: url(../imagenes/destinos8.jpg); }
 
+#carouselDestinos #carouselContenedorDiv #destinosDiv1 {
+  margin-top: 54px; }
+
 #carouselDestinos #carouselContenedorDiv .carouselImages {
   height: 100vh; }
 
@@ -58,6 +67,11 @@ body {
     display: none; }
     #carouselDestinos #carouselContenedorDiv #carouselContenedorDiv {
       display: none; } }
+
+@media (min-width: 1024px) {
+  #carouselDestinos #carouselContenedorDiv .carouselTextBlack {
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; } }
 
 #helpWidgetButton {
   display: flex;
@@ -338,33 +352,6 @@ footer {
   background-repeat: no-repeat;
   background-size: 100%; }
 
-#destinosDiv1 {
-  background-image: url(../imagenes/destinos1.jpg); }
-
-#destinosDiv2 {
-  background-image: url(../imagenes/imagen3.JPG); }
-
-#destinosDiv3 {
-  background-image: url(../imagenes/destinos3.jpg); }
-
-#destinosDiv4 {
-  background-image: url(../imagenes/ImagenBGPromo.jpg); }
-
-#destinosDiv5 {
-  background-image: url(../imagenes/destinos5.jpg); }
-
-#destinosDiv6 {
-  background-image: url(../imagenes/destinos6.jpg); }
-
-#destinosDiv7 {
-  background-image: url(../imagenes/destinos7.jpg); }
-
-#destinosDiv8 {
-  background-image: url(../imagenes/destinos8.jpg); }
-
-#destinosDiv1 {
-  margin-top: 54px; }
-
 #parrafoPromociones, .interDivsDestinos {
   width: 100%;
   height: 170px;
@@ -422,8 +409,23 @@ footer {
     background-size: cover;
     min-height: 100vh; }
   #destinosDiv1 {
-    margin-top: 54px;
-    background-image: url(../imagenes/destinos1.jpg); }
+    margin-top: 54px; }
+  #destinosDiv1 {
+    background-image: url(../imagenes/destinos1Cellphone.jpg); }
+  #destinosDiv2 {
+    background-image: url(../imagenes/imagen3Cellphone.JPG); }
+  #destinosDiv3 {
+    background-image: url(../imagenes/destinos3Cellphone.jpg); }
+  #destinosDiv4 {
+    background-image: url(../imagenes/ImagenBGPromoCellphone.jpg); }
+  #destinosDiv5 {
+    background-image: url(../imagenes/destinos5Cellphone.jpg); }
+  #destinosDiv6 {
+    background-image: url(../imagenes/destinos6Cellphone.jpg); }
+  #destinosDiv7 {
+    background-image: url(../imagenes/destinos7Cellphone.jpg); }
+  #destinosDiv8 {
+    background-image: url(../imagenes/destinos8Cellphone.jpg); }
   /*PromocionesMobile*/
   #sectionPromociones {
     display: flex;
@@ -443,8 +445,23 @@ footer {
     background-size: cover;
     min-height: 100vh; }
   #destinosDiv1 {
-    margin-top: 54px;
-    background-image: url(../imagenes/destinos1.jpg); }
+    margin-top: 54px; }
+  #destinosDiv1 {
+    background-image: url(../imagenes/destinos1Tablet.jpg); }
+  #destinosDiv2 {
+    background-image: url(../imagenes/imagen3Tablet.JPG); }
+  #destinosDiv3 {
+    background-image: url(../imagenes/destinos3Tablet.jpg); }
+  #destinosDiv4 {
+    background-image: url(../imagenes/ImagenBGPromoTablet.jpg); }
+  #destinosDiv5 {
+    background-image: url(../imagenes/destinos5Tablet.jpg); }
+  #destinosDiv6 {
+    background-image: url(../imagenes/destinos6Tablet.jpg); }
+  #destinosDiv7 {
+    background-image: url(../imagenes/destinos7Tablet.jpg); }
+  #destinosDiv8 {
+    background-image: url(../imagenes/destinos8Tablet.jpg); }
   #sectionPromociones {
     display: flex;
     justify-items: center;
@@ -459,9 +476,6 @@ footer {
 @media (min-width: 1024px) {
   #sectionDestinos {
     display: none; }
-  .carouselTextBlack {
-    color: #fff;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; }
   #divFormReserva {
     background-color: rgba(243, 226, 199, 0.5);
     border-top: 5px solid #c0b096;
@@ -710,3 +724,27 @@ body {
   font-size: 15px;
   font-family: "Oswald";
   letter-spacing: 10px; }
+
+@media (max-width: 480px) {
+  #indexDiv_1 {
+    background-image: url(../imagenes/imagen1Cellphone.JPG); }
+  #indexDiv_2 {
+    background-image: url(../imagenes/imagen2Cellphone.JPG); }
+  #indexDiv_3 {
+    background-image: url(../imagenes/imagen3Cellphone.JPG); }
+  #indexDiv_4 {
+    background-image: url(../imagenes/imagen4Cellphone.JPG); }
+  #indexDiv_5 {
+    background-image: url(../imagenes/imagen5Cellphone.JPG); } }
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  #indexDiv_1 {
+    background-image: url(../imagenes/imagen1Tablet.JPG); }
+  #indexDiv_2 {
+    background-image: url(../imagenes/imagen2Tablet.JPG); }
+  #indexDiv_3 {
+    background-image: url(../imagenes/imagen3Tablet.JPG); }
+  #indexDiv_4 {
+    background-image: url(../imagenes/imagen4Tablet.JPG); }
+  #indexDiv_5 {
+    background-image: url(../imagenes/imagen5Tablet.JPG); } }

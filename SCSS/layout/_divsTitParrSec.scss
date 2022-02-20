@@ -18,27 +18,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
-//Comienzo Map
-$backgroundDestinos:(
-    Div1: url(../imagenes/destinos1.jpg),
-    Div2: url(../imagenes/imagen3.JPG),
-    Div3: url(../imagenes/destinos3.jpg),
-    Div4: url(../imagenes/ImagenBGPromo.jpg),
-    Div5: url(../imagenes/destinos5.jpg),
-    Div6: url(../imagenes/destinos6.jpg),
-    Div7: url(../imagenes/destinos7.jpg),
-    Div8: url(../imagenes/destinos8.jpg)
-);
 
-@each $destinosDivs, $bgDestinos in $backgroundDestinos {
-    #destinos#{$destinosDivs} {
-        background-image: $bgDestinos;
-    }
-}
-//Fin Map
-#destinosDiv1 {
-     margin-top: 54px;
-}
 
 
 #parrafoPromociones, .interDivsDestinos {
@@ -108,8 +88,23 @@ $backgroundDestinos:(
     }
     #destinosDiv1 {
         margin-top: 54px;
-        background-image: url(../imagenes/destinos1.jpg);
     }
+    $backgroundDestinos:(
+            Div1: url(../imagenes/destinos1Cellphone.jpg),
+            Div2: url(../imagenes/imagen3Cellphone.JPG),
+            Div3: url(../imagenes/destinos3Cellphone.jpg),
+            Div4: url(../imagenes/ImagenBGPromoCellphone.jpg),
+            Div5: url(../imagenes/destinos5Cellphone.jpg),
+            Div6: url(../imagenes/destinos6Cellphone.jpg),
+            Div7: url(../imagenes/destinos7Cellphone.jpg),
+            Div8: url(../imagenes/destinos8Cellphone.jpg)
+            );
+
+            @each $destinosDivs, $bgDestinos in $backgroundDestinos {
+                #destinos#{$destinosDivs} {
+                    background-image: $bgDestinos;
+                }
+            }
     /*PromocionesMobile*/
     #sectionPromociones {
         display: flex;
@@ -136,8 +131,24 @@ $backgroundDestinos:(
 
     #destinosDiv1 {
         margin-top: 54px;
-        background-image: url(../imagenes/destinos1.jpg);
     }
+
+    $backgroundDestinos:(
+            Div1: url(../imagenes/destinos1Tablet.jpg),
+            Div2: url(../imagenes/imagen3Tablet.JPG),
+            Div3: url(../imagenes/destinos3Tablet.jpg),
+            Div4: url(../imagenes/ImagenBGPromoTablet.jpg),
+            Div5: url(../imagenes/destinos5Tablet.jpg),
+            Div6: url(../imagenes/destinos6Tablet.jpg),
+            Div7: url(../imagenes/destinos7Tablet.jpg),
+            Div8: url(../imagenes/destinos8Tablet.jpg)
+        );
+
+        @each $destinosDivs, $bgDestinos in $backgroundDestinos {
+            #destinos#{$destinosDivs} {
+                background-image: $bgDestinos;
+            }
+        }
 
     #sectionPromociones {
         display: flex;
@@ -158,10 +169,7 @@ $backgroundDestinos:(
     #sectionDestinos {
         display: none;
     }
-    .carouselTextBlack {
-        color: #fff;
-        text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    }
+    
 
     #divFormReserva {
         background-color: rgba(243, 226, 199, 0.5);

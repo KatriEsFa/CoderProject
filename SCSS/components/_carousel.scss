@@ -9,30 +9,27 @@
         background-size: 100%;
         }
         
-        #destinosDiv1 {
-            margin-top: 54px;
+       //Comienzo Map
+        $backgroundDestinos:(
+            Div1: url(../imagenes/destinos1.jpg),
+            Div2: url(../imagenes/imagen3.JPG),
+            Div3: url(../imagenes/destinos3.jpg),
+            Div4: url(../imagenes/ImagenBGPromo.jpg),
+            Div5: url(../imagenes/destinos5.jpg),
+            Div6: url(../imagenes/destinos6.jpg),
+            Div7: url(../imagenes/destinos7.jpg),
+            Div8: url(../imagenes/destinos8.jpg)
+        );
+
+        @each $destinosDivs, $bgDestinos in $backgroundDestinos {
+            #destinos#{$destinosDivs} {
+                background-image: $bgDestinos;
+            }
         }
-        #destinosDiv2 {
-            background-image: url(../imagenes/imagen3.JPG);
-        }
-        #destinosDiv3 {
-            background-image: url(../imagenes/destinos3.jpg);
-        }
-        #destinosDiv4 {
-            background-image: url(../imagenes/ImagenBGPromo.jpg);
-        }
-        #destinosDiv5 {
-            background-image: url(../imagenes/destinos5.jpg);
-        }
-        #destinosDiv6 {
-            background-image: url(../imagenes/destinos6.jpg);
-        }
-        #destinosDiv7 {
-            background-image: url(../imagenes/destinos7.jpg);
-        }
-        #destinosDiv8 {
-            background-image: url(../imagenes/destinos8.jpg);
-        }
+        //Fin Map
+#destinosDiv1 {
+     margin-top: 54px;
+}
         .carouselImages {
             height: 100vh;
         }  
@@ -41,11 +38,20 @@
             #carouselContenedorDiv {
                 display: none;
             }
+            
         }
         @media (min-width: 481px) and (max-width:1023px) {
             display: none;
             #carouselContenedorDiv {
                 display: none;
+            }
+            
+        }
+        @media (min-width: 1024px) {
+
+            .carouselTextBlack {
+                color: #fff;
+                text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
             }
         }
     }
