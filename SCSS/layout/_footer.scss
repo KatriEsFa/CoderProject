@@ -11,6 +11,9 @@ footer {
     background-color: $colorObscuro;
     border-bottom: 15px solid $colorMain;
     font-style: default;
+    .contactIcons {
+        max-height: 30px;
+    }
     @media (max-width: 480px) {
         font-size: small;
         max-width: 100%; 

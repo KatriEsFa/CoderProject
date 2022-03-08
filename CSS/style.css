@@ -379,6 +379,8 @@ footer {
   background-color: #c0b096;
   border-bottom: 15px solid #f3e2c7;
   font-style: default; }
+  footer .contactIcons {
+    max-height: 30px; }
   @media (max-width: 480px) {
     footer {
       font-size: small;
