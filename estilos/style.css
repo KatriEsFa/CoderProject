@@ -86,21 +86,21 @@ header {
     min-height: 100vh;/*en scss*/
     width: 100%;/*en scss*/
     margin-top: 54px;/*en scss*/
-    background-image: url(../imagenes/imagen1.JPG);/*en scss*/
+    background-image: url(../imagenes/imagen1.jpg);/*en scss*/
 }/*EN SCSS*/
 #indexDiv_2 {
-    background-image: url(../imagenes/imagen2.JPG);/*en scss*/
+    background-image: url(../imagenes/imagen2.jpg);/*en scss*/
 }/*EN SCSS*/
 #indexDiv_3 {
-    background-image: url(../imagenes/imagen3.JPG);/*en scss*/
+    background-image: url(../imagenes/imagen3.jpg);/*en scss*/
 
 }/*EN SCSS*/
 #indexDiv_4 {
-    background-image: url(../imagenes/imagen4.JPG);/*en scss*/
+    background-image: url(../imagenes/imagen4.jpg);/*en scss*/
 
 }/*EN SCSS*/
 #indexDiv_5 {
-    background-image: url(../imagenes/imagen5.JPG);/*en scss*/
+    background-image: url(../imagenes/imagen5.jpg);/*en scss*/
 
 }/*EN SCSS*/
 
@@ -139,7 +139,7 @@ header {
     margin-top: 54px;
 }/*EN SCSS*/
 #destinosDiv2 {
-    background-image: url(../imagenes/imagen3.JPG);/*en scss*/
+    background-image: url(../imagenes/imagen3.jpg);/*en scss*/
 }
 #destinosDiv3 {
     background-image: url(../imagenes/destinos3.jpg);/*en scss*/

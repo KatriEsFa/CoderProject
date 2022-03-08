@@ -30,7 +30,7 @@ body {
   background-image: url(../imagenes/destinos1.jpg); }
 
 #carouselDestinos #carouselContenedorDiv #destinosDiv2 {
-  background-image: url(../imagenes/imagen3.JPG); }
+  background-image: url(../imagenes/imagen3.jpg); }
 
 #carouselDestinos #carouselContenedorDiv #destinosDiv3 {
   background-image: url(../imagenes/destinos3.jpg); }
@@ -468,7 +468,7 @@ footer {
   #destinosDiv1 {
     background-image: url(../imagenes/destinos1Cellphone.jpg); }
   #destinosDiv2 {
-    background-image: url(../imagenes/imagen3Cellphone.JPG); }
+    background-image: url(../imagenes/imagen3Cellphone.jpg); }
   #destinosDiv3 {
     background-image: url(../imagenes/destinos3Cellphone.jpg); }
   #destinosDiv4 {
@@ -504,7 +504,7 @@ footer {
   #destinosDiv1 {
     background-image: url(../imagenes/destinos1Tablet.jpg); }
   #destinosDiv2 {
-    background-image: url(../imagenes/imagen3Tablet.JPG); }
+    background-image: url(../imagenes/imagen3Tablet.jpg); }
   #destinosDiv3 {
     background-image: url(../imagenes/destinos3Tablet.jpg); }
   #destinosDiv4 {
@@ -739,19 +739,19 @@ body {
   background-attachment: fixed; }
 
 #indexDiv_1 {
-  background-image: url(../imagenes/imagen1.JPG); }
+  background-image: url(../imagenes/imagen1.jpg); }
 
 #indexDiv_2 {
-  background-image: url(../imagenes/imagen2.JPG); }
+  background-image: url(../imagenes/imagen2.jpg); }
 
 #indexDiv_3 {
-  background-image: url(../imagenes/imagen3.JPG); }
+  background-image: url(../imagenes/imagen3.jpg); }
 
 #indexDiv_4 {
-  background-image: url(../imagenes/imagen4.JPG); }
+  background-image: url(../imagenes/imagen4.jpg); }
 
 #indexDiv_5 {
-  background-image: url(../imagenes/imagen5.JPG); }
+  background-image: url(../imagenes/imagen5.jpg); }
 
 #indexDiv_1 {
   min-height: 100vh;
@@ -779,24 +779,24 @@ body {
 
 @media (max-width: 480px) {
   #indexDiv_1 {
-    background-image: url(../imagenes/imagen1Cellphone.JPG); }
+    background-image: url(../imagenes/imagen1Cellphone.jpg); }
   #indexDiv_2 {
-    background-image: url(../imagenes/imagen2Cellphone.JPG); }
+    background-image: url(../imagenes/imagen2Cellphone.jpg); }
   #indexDiv_3 {
-    background-image: url(../imagenes/imagen3Cellphone.JPG); }
+    background-image: url(../imagenes/imagen3Cellphone.jpg); }
   #indexDiv_4 {
-    background-image: url(../imagenes/imagen4Cellphone.JPG); }
+    background-image: url(../imagenes/imagen4Cellphone.jpg); }
   #indexDiv_5 {
-    background-image: url(../imagenes/imagen5Cellphone.JPG); } }
+    background-image: url(../imagenes/imagen5Cellphone.jpg); } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
   #indexDiv_1 {
-    background-image: url(../imagenes/imagen1Tablet.JPG); }
+    background-image: url(../imagenes/imagen1Tablet.jpg); }
   #indexDiv_2 {
-    background-image: url(../imagenes/imagen2Tablet.JPG); }
+    background-image: url(../imagenes/imagen2Tablet.jpg); }
   #indexDiv_3 {
-    background-image: url(../imagenes/imagen3Tablet.JPG); }
+    background-image: url(../imagenes/imagen3Tablet.jpg); }
   #indexDiv_4 {
-    background-image: url(../imagenes/imagen4Tablet.JPG); }
+    background-image: url(../imagenes/imagen4Tablet.jpg); }
   #indexDiv_5 {
-    background-image: url(../imagenes/imagen5Tablet.JPG); } }
+    background-image: url(../imagenes/imagen5Tablet.jpg); } }
